@@ -28,7 +28,7 @@ Configure your stylelint configuration file to extend the stylelint-config-itp p
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
-​
+
 [npm-url]: https://npmjs.org/package/stylelint-config-itp
 [npm-version-image]: http://img.shields.io/npm/v/stylelint-config-itp.svg?style=flat
 [npm-downloads-image]: http://img.shields.io/npm/dm/stylelint-config-itp.svg?style=flat
