@@ -1,0 +1,26 @@
+{
+  "name": "stylelint-config-itp",
+  "version": "1.0.0",
+  "description": "In The Pocket config for stylelint",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "itp"
+  ],
+  "author": "In The Pocket",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inthepocket/stylelint-config-itp.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^8.0.0"
+  }
+}
