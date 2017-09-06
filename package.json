@@ -14,6 +14,9 @@
     "url": "https://github.com/inthepocket/stylelint-config-itp.git"
   },
   "main": "index.js",
+  "scripts": {
+    "test": "stylelint test/*.css  --config index.js"
+  },
   "files": [
     "index.js"
   ],
@@ -23,5 +26,8 @@
   },
   "peerDependencies": {
     "stylelint": "^8.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^8.1.1"
   }
 }

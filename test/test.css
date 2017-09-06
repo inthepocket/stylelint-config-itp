@@ -1,0 +1,9 @@
+.this-should-pass {
+  display: block;
+  position: absolute;
+}
+
+.this-should-fail {
+  position: absolute;
+  display: block;
+}
