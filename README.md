@@ -4,25 +4,49 @@
 
 > In The Pocket's default configuration for [Stylelint](https://github.com/stylelint/stylelint).
 
-Extends [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
+The current configuration is a hard copy of [Bootstrap's latest Stylelint configuration](https://github.com/twbs/bootstrap/blob/v4-dev/.stylelintrc). We didn't make any changes to it and like to keep it that way to avoid any discussions and keep this maintainable. Whenever Bootstrap decides to make changes, we need to make changes, that's the idea.
+
+[PR](https://bitbucket.org/inthepocket/stylelint-config-itp/pull-requests/1) with more info.
+
+Extends [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) and [stylelint-config-recommended-scss](https://github.com/kristerkari/stylelint-config-recommended-scss)
 
 Plugins used: [stylelint-order](https://github.com/hudochenkov/stylelint-order)
 
-## Installation
+## Usage
 
-```bash
-npm install stylelint-config-itp --save-dev
+Install the following packages in your project:
+
+```sh
+npm install stylelint-config-itp stylelint husky lint-staged --save-dev
 ```
 
-## Usage
-Configure your stylelint configuration file to extend the stylelint-config-itp package
+Add .stylelintrc to the root of your project:
 
 ```js
 {
-  "extends": "stylelint-config-itp",
-  "rules": {
-    // Add overrides and additional rules here
-  }
+  "extends": "stylelint-config-itp"
+}
+```
+
+Add .stylelintignore (if you need one) to the root of your project:
+
+```text
+**/*.min.css
+**/dist/
+**/vendor/
+/_gh_pages/
+```
+
+Update your package.json:
+
+```js
+{
+  "scripts": {
++   "precommit": "lint-staged"
+  },
++ "lint-staged": {
++   "*.{css,scss}": ["stylelint --fix", "git add"]
++ }
 }
 ```
 
