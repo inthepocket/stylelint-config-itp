@@ -1,5 +1,7 @@
 # stylelint-config-itp
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/inthepocket/stylelint-config-itp.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-version-image]][npm-url] [![MIT License][license-image]][license-url]
 
 > In The Pocket's default configuration for [Stylelint](https://github.com/stylelint/stylelint).
